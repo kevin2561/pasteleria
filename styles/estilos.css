@@ -5,6 +5,7 @@
 }
 
 :root {}
+
 /*#f7c5c5*/
 body {
     font-style: normal;
@@ -14,14 +15,17 @@ body {
     color: #000;
     letter-spacing: .1px;
 }
+
 /*---------------------HEADER-----------------*/
 .header {
     width: 100%;
 }
+
 #header-desktop {
     display: block;
 
 }
+
 .header-top-wrapper {
     display: flex;
     height: 100%;
@@ -39,7 +43,9 @@ body {
     display: flex;
     align-items: center;
 }
-.header-top .container, .header-top .row {
+
+.header-top .container,
+.header-top .row {
     height: 100%;
 }
 
@@ -65,6 +71,7 @@ body {
     justify-content: flex-end;
     align-items: center;
 }
+
 .button-express {
     background-color: #fff;
     padding: 0 20px;
@@ -74,10 +81,12 @@ body {
     height: 100%;
     text-decoration: none;
 }
+
 .button-express img {
     width: 32px;
     margin-right: 10px;
 }
+
 .button-express h1 {
     text-transform: uppercase;
     font-size: 14px;
@@ -85,14 +94,17 @@ body {
     color: #6c6366;
     font-weight: 100;
 }
+
 .button-express h1 span {
     font-weight: 400;
 }
+
 .header-middle {
     position: relative;
     background-color: #FFD9E0;
 }
-.header-middle::after{
+
+.header-middle::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -110,31 +122,37 @@ body {
     display: flex;
     padding: 10px 0;
 }
+
 .header-middle-block {
     width: 33.33%;
     z-index: 2;
 }
+
 .header-middle-social {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding-bottom: 28px;
 }
-.header-middle-social-icon-youtube img{
- width: 28px;
+
+.header-middle-social-icon-youtube img {
+    width: 28px;
 }
 
 
 .header-middle-social-icon {
     margin-right: 30px;
 }
+
 .header-middle-social-icon img {
     width: 22px;
 }
+
 .header-middle-logo {
     display: flex;
     padding-bottom: 28px;
 }
+
 .header-middle-logo img {
     width: 230px;
     height: 94px;
@@ -147,17 +165,20 @@ body {
     align-items: center;
     padding-bottom: 28px;
 }
+
 .header-middle-icon-item:last-child {
     margin-right: 0px;
     padding-right: 0px;
     border-right: 0;
 }
+
 .header-middle-icon-item a {
     display: flex;
     align-items: center;
     color: #fff;
     margin-right: 15px;
 }
+
 .header-middle-icon-item img {
     width: 33px;
 }
@@ -171,15 +192,18 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .menu-principal-container {
     z-index: 1;
 }
-.menu{
+
+.menu {
     display: flex;
     flex-direction: row;
     list-style: none;
     margin: 0 auto;
 }
+
 .menu a {
     padding: 0 17px !important;
     text-transform: uppercase;
@@ -188,15 +212,46 @@ body {
     color: #a4a4a4 !important;
     text-decoration: none;
 }
+
 /*---------------------FIN HEADER-----------------*/
 
+/* FOOTER*/
+.footer-main {
+    background-color: #FFD9E0;
+    padding-top: 80px;
+    padding-bottom: 65px;
+    position: relative;
+}
+
+.page-separator {
+    width: 100%;
+    height: 55px;
+    background-image: url("https://dulcefina.com.pe/wp-content/themes/storefront/assets/images/shape-header3.svg");
+    background-size: 4.5%;
+    background-repeat: repeat;
+    background-position: center;
+
+}
+
+.footer-copyright {
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+}
+.footer-copyright-block h2 {
+    font-size: 16px;
+    font-weight: 200;
+    color: #fff;
+    margin: 0;
+    display: flex;
+}
+
+/*FIN FOOTER*/
 
 /*---------------------TIENDA-----------------*/
 /*---------------------FIN TIENDA-----------------*/
 
 /*---------------------NOSOTROS-----------------*/
-.nosotros{
-}
+.nosotros {}
 
 /*---------------------FIN NOSOTROS-----------------*/
-
