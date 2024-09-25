@@ -5,10 +5,13 @@ function main() {
     menuPrincipal.forEach((a, index) => {
         a.addEventListener("click", function (e) {
             e.preventDefault();
+            let pagina = paginas[index];
             fetch(`./paginas/${paginas[index]}.html`)
                 .then(response => response.text())
                 .then(data => {
                     mainContext.innerHTML = data;
+                    window.history.pushState({ page: pagina }, pagina, `/${pagina.toLowerCase()}`);
+
                 })
 
 
