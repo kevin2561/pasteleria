@@ -1,0 +1,190 @@
+* {
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+}
+
+:root {}
+
+body {
+    font-style: normal;
+    overflow-x: hidden;
+    font-family: 'Roboto';
+    font-weight: 300;
+    color: #000;
+    letter-spacing: .1px;
+}
+
+.header {
+    width: 100%;
+}
+#header-desktop {
+    display: block;
+
+}
+.header-top-wrapper {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+}
+
+
+.header-top-block {
+    width: auto;
+}
+
+.header-top {
+    background-color: #F2D4D7;
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+.header-top .container, .header-top .row {
+    height: 100%;
+}
+
+.header-top-info {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header-top-info-block {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.header-top-info-block img {
+    width: 15px;
+    margin-right: 10px;
+}
+
+.header-top-icon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.button-express {
+    background-color: #fff;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+}
+.button-express img {
+    width: 32px;
+    margin-right: 10px;
+}
+.button-express h1 {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0;
+    color: #6c6366;
+    font-weight: 100;
+}
+.button-express h1 span {
+    font-weight: 400;
+}
+.header-middle {
+    position: relative;
+    background-color: #FFD9E0;
+}
+.header-middle::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 28px;
+    background-image: url("https://dulcefina.com.pe/wp-content/themes/storefront/assets/images/shape-header3.svg");
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: center;
+    z-index: 1;
+}
+
+.header-middle-wrapper {
+    display: flex;
+    padding: 10px 0;
+}
+.header-middle-block {
+    width: 33.33%;
+    z-index: 2;
+}
+.header-middle-social {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 28px;
+}
+.header-middle-social-icon-youtube img{
+ width: 28px;
+}
+
+
+.header-middle-social-icon {
+    margin-right: 30px;
+}
+.header-middle-social-icon img {
+    width: 22px;
+}
+.header-middle-logo {
+    display: flex;
+    padding-bottom: 28px;
+}
+.header-middle-logo img {
+    width: 230px;
+    height: 94px;
+    margin: 0 auto;
+}
+
+.header-middle-icon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 28px;
+}
+.header-middle-icon-item:last-child {
+    margin-right: 0px;
+    padding-right: 0px;
+    border-right: 0;
+}
+.header-middle-icon-item a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-right: 15px;
+}
+.header-middle-icon-item img {
+    width: 33px;
+}
+
+.header-nav {
+    height: auto;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-principal-container {
+    z-index: 1;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0 auto;
+}
+.menu a {
+    padding: 0 17px !important;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all .3s ease;
+    color: #a4a4a4 !important;
+    text-decoration: none;
+}
