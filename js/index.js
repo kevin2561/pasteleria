@@ -17,8 +17,25 @@ function main() {
 
         })
     })
-    console.log(menuPrincipal)
+    window.addEventListener("scroll", function () {
+        let headerNav = document.querySelector(".header-nav");
+        let header = document.querySelector("header");
+
+        let posicionY = window.scrollY;
+        let headerAltura = header.clientHeight;
+
+        if (posicionY > headerAltura) {
+            headerNav.classList.add("fixed-top");
+        } else {
+            headerNav.classList.remove("fixed-top");
+
+
+        }
+
+
+    })
 
 
 }
 main();
+
