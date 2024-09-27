@@ -16,6 +16,42 @@ body {
     letter-spacing: .1px;
 }
 
+.banner {
+    padding: 50px 0;
+    background-color: #f2f2f2;
+}
+
+.banner-content h2 {
+    margin: 0;
+    color: #6f7170;
+    font-size: 53px;
+    text-align: center;
+    font-family: 'Soft-Elegance';
+}
+
+.breadcrumbs-page {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.nav-breadcrumb {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffc6c4;
+    margin: 0 2px;
+    text-decoration: none;
+
+}
+
+.nav-breadcrumb a {
+    transition: all .3s ease;
+    color: #6f7170;
+    text-decoration: none;
+
+}
+
 /*---------------------HEADER-----------------*/
 .header {
     width: 100%;
@@ -238,6 +274,7 @@ body {
     margin-top: 40px;
     width: 100%;
 }
+
 .footer-copyright-block h2 {
     font-size: 16px;
     font-weight: 200;
@@ -247,6 +284,23 @@ body {
 }
 
 /*FIN FOOTER*/
+
+/*-------------------HOME-------------------*/
+#carrosel-main .img-carrusel {
+    filter: grayscale(10%);
+
+
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 18px !important;
+    height: 18px !important;
+    background-color: #eeeeee !important;
+    border-radius: 50%;
+}
+
+
+/*-------------------HOME-------------------*/
 
 /*---------------------TIENDA-----------------*/
 /*---------------------FIN TIENDA-----------------*/
