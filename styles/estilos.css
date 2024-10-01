@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
 * {
     box-sizing: 0;
     margin: 0;
@@ -253,7 +255,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition:  all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 
@@ -345,11 +347,131 @@ body {
 /*---------------------FIN NOSOTROS-----------------*/
 
 /*------------CONTACTO----------*/
+
 .section-content {
     padding: 110px 0;
 }
+
 .encuentranos-wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.encuentranos-items {
+    display: grid;
+    width: 85%;
+}
+
+.encuentranos-contactos {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.encuentranos-contactos-items {
+    width: 100%;
+    display: flex;
+    flex-direction: column !important;
+
+}
+
+.encuentranos-contactos-text {
+    margin-bottom: 30px;
+    text-align: center;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.encuentranos-contactos-text i {
+    color: #ffced3;
+    font-size: 48px;
+    margin-bottom: 10px;
+    user-select: none;
+}
+
+.encuentranos-contactos-text span {
+    font-size: 14px;
+    color: #a4a4a4;
+    margin: 0;
+    font-weight: 300;
+
+}
+
+.encuentranos-contactos-items h2 {
+    font-size: 36px;
+    font-family: 'Soft-Elegance';
+    color: #787878;
+    margin-bottom: 60px;
+}
+
+.contenedor-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.contenedor-form label {
+    margin-bottom: .5rem;
+}
+
+.contenedor-form label strong {
+    color: #ffc6c4;
+}
+
+.contenedor-form input {
+    width: 100%;
+    padding: 9px 15px;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    background-color: #ffffff !important;
+    box-shadow: none;
+    height: 48px;
+    line-height: 47px !important;
+    transition: border-color .2s ease-in-out;
+    font-size: 15px !important;
+    font-weight: 300 !important;
+    color: #a19d98;
+    outline: none;
+
+}
+.contenedor-form input:focus{
+    border: 1px solid  var(--color-pastel-fuerte);
+
+}
+
+textarea {
+    width: 100%;
+    height: 120px;
+    border: 1px solid #ccc;
+
+}
+textarea:focus{
+    outline: none;
+    border: 1px solid  var(--color-pastel-fuerte);
+
+}
+
+.contenedor-form button {
+    padding: 18px !important;
+    line-height: 1 !important;
+    border-radius: 0 !important;
+    text-transform: uppercase !important;
+    color: #fff !important;
+    font-weight: 200 !important;
+    font-size: 16px !important;
+    background-color: #b2dbd5 !important;
+    border: 1px solid #b2dbd5 !important;
+    transition: all .3s ease;
+    user-select: none;
+}
+
+.contenedor-form button:hover {
+    background-color: var(--color-blanco) !important;
+    border-color: #d5d5d5 !important;
+    color: #333333 !important;
+}
+
 /*------------FIN CONTACTO----------*/
