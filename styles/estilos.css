@@ -4,6 +4,7 @@
     box-sizing: 0;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -336,7 +337,35 @@ body {
 }
 
 
-/*-------------------HOME-------------------*/
+/*-------------------FIN HOME-------------------*/
+/*-------------------CUENTA------------------------*/
+#contenedor-login {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    gap: 0px 50px;
+}
+
+#contenedor-login .u-column1,
+#contenedor-login .u-column2{
+flex: 0 0 48% !important;
+/* max-width: 48% !important; */
+/* width: 49% !important; */
+margin: 0 !important;
+padding: 20px 40px;
+border: 1px solid #ffc6c4;
+}
+#contenedor-login .u-column1 h2,
+#contenedor-login .u-column2 h2{
+    font-size: 16px;
+    font-family: 'Soft-Elegance';
+    font-weight: 700;
+    padding: 0 !important;
+    margin-bottom: 40px !important;
+    color: #000;
+}
+
+/*-------------------FIN CUENTA------------------------*/
 
 /*---------------------TIENDA-----------------*/
 /*---------------------FIN TIENDA-----------------*/
@@ -437,8 +466,9 @@ body {
     outline: none;
 
 }
-.contenedor-form input:focus{
-    border: 1px solid  var(--color-pastel-fuerte);
+
+.contenedor-form input:focus {
+    border: 1px solid var(--color-pastel-fuerte);
 
 }
 
@@ -448,9 +478,10 @@ textarea {
     border: 1px solid #ccc;
 
 }
-textarea:focus{
+
+textarea:focus {
     outline: none;
-    border: 1px solid  var(--color-pastel-fuerte);
+    border: 1px solid var(--color-pastel-fuerte);
 
 }
 
