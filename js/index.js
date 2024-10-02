@@ -36,7 +36,7 @@ function main() {
             .then(response => response.text())
             .then(data => {
                 mainContext.innerHTML = data;
-                // window.history.pushState({ page: pagina }, pagina, `/${pagina.toLowerCase()}`);
+            //    window.history.pushState({ page: pagina }, pagina, `/${pagina.toLowerCase()}`);
 
             })
 
