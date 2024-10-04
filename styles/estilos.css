@@ -339,6 +339,14 @@ body {
 
 /*-------------------FIN HOME-------------------*/
 /*-------------------CUENTA------------------------*/
+#mi-cuenta .col-md-12 {
+    flex: 0 0 auto;
+    width: 100%;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center !important;
+}
+
 #contenedor-login {
     display: flex;
     flex-direction: row;
@@ -347,16 +355,17 @@ body {
 }
 
 #contenedor-login .u-column1,
-#contenedor-login .u-column2{
-flex: 0 0 48% !important;
-/* max-width: 48% !important; */
-/* width: 49% !important; */
-margin: 0 !important;
-padding: 20px 40px;
-border: 1px solid #ffc6c4;
+#contenedor-login .u-column2 {
+    flex: 0 0 48% !important;
+    /* max-width: 48% !important; */
+    /* width: 49% !important; */
+    margin: 0 !important;
+    padding: 20px 40px;
+    border: 1px solid #ffc6c4;
 }
+
 #contenedor-login .u-column1 h2,
-#contenedor-login .u-column2 h2{
+#contenedor-login .u-column2 h2 {
     font-size: 16px;
     font-family: 'Soft-Elegance';
     font-weight: 700;
@@ -364,7 +373,21 @@ border: 1px solid #ffc6c4;
     margin-bottom: 40px !important;
     color: #000;
 }
-
+.contenedor-password{
+    width: 100%;
+    position: relative;
+}
+.contenedor-password input{
+    padding-left: 40px !important;
+}
+.mostrar-password{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(25%, -25%);
+    width: 50px;
+    height: 50px;
+}
 /*-------------------FIN CUENTA------------------------*/
 
 /*---------------------TIENDA-----------------*/

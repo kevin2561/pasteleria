@@ -26,7 +26,17 @@
                     <div class="u-column1 col-1">
                         <h2>Aceder</h2>
                         <form>
-
+                            <div class="contenedor-form">
+                                <label>Nombre de usuario o correo electrónico <strong>*</strong></label>
+                                <input type="text">
+                            </div>
+                            <div class="contenedor-form">
+                                <label>Contraseña <strong>*</strong></label>
+                                <div class="contenedor-password">
+                                    <input type="password" class="password">
+                                    <span class="mostrar-password"><i class="bi bi-eye-fill"></i></span>
+                                  </div>
+                            </div>
                         </form>
 
 
@@ -34,6 +44,23 @@
                     <div class="u-column2 col-2">
                         <h2>Registrarse</h2>
                         <form>
+                            <div class="contenedor-form">
+                                <label>Nombre y apellido <strong>*</strong></label>
+                                <input type="text">
+                            </div>
+                            <div class="contenedor-form">
+                                <label>Dirección de correo electrónico <strong>*</strong></label>
+                                <input type="email">
+                            </div>
+                            <div class="contenedor-form">
+                                <label>Contraseña <strong>*</strong></label>
+                              <div class="contenedor-password">
+                                <input type="password" class="password">
+                                <span class="mostrar-password"><i class="bi bi-eye-fill"></i></span>
+                              </div>
+                            </div>
+                        
+                         
 
                         </form>
 
@@ -47,4 +74,6 @@
     </div>
 </section>
 
-<script src="Cuenta.js"></script>
+<script> 
+    $.getScript("Cuenta.js")
+</script>
