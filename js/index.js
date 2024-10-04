@@ -1,6 +1,6 @@
 function main() {
     let paginas = ["Tienda", "Nosotros", "Blog", "Contacto"]
-    let cuenta=document.getElementById("cuenta")
+    let cuenta = document.getElementById("cuenta")
     let menuPrincipal = document.querySelectorAll("#menu-principal li .pagina");
     let mainContext = document.getElementById("main-context");
 
@@ -27,7 +27,7 @@ function main() {
 
 
     })
-    cuenta.addEventListener("click",(e) => vinculos("Cuenta", e))
+    cuenta.addEventListener("click", (e) => vinculos("Cuenta", e))
 
 
     function vinculos(pagina, e) {
@@ -36,12 +36,15 @@ function main() {
             .then(response => response.text())
             .then(data => {
                 mainContext.innerHTML = data;
-            //    window.history.pushState({ page: pagina }, pagina, `/${pagina.toLowerCase()}`);
-
+                //    window.history.pushState({ page: pagina }, pagina, `/${pagina.toLowerCase()}`);
+               let creeateScript=   document.createElement("script");
+               creeateScript.src=`./paginas/${pagina}.js`;
+               mainContext.appendChild(creeateScript);
             })
 
 
     }
+
 
 
 }
