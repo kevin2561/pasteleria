@@ -8,15 +8,14 @@ function cuenta() {
 
     iconoMostrarContraseña.forEach((item, index) => {
         item.addEventListener("click", (e) => {
-           // let icon = iconos[index].className
-            console.log(iconos[index].className)
             if (inputPassword[index].type === "password") {
                 inputPassword[index].type = "text";
-
                 iconos[index].className = iconoMostrar
+
             } else {
                 inputPassword[index].type = "password";
-                iconos[index].className = iconos[index].className
+                iconos[index].className = iconoOcultar
+
             }
 
 

@@ -63,8 +63,8 @@ body {
 }
 
 .whatsapp-contact {
-    width: 65px;
-    height: 65px;
+    width: 60px;
+    height: 60px;
     background-color: #25D366;
     position: fixed;
     right: 30px;
@@ -336,6 +336,119 @@ body {
 
 }
 
+.section-content {
+    padding: 110px 0px;
+
+}
+
+.section-title {
+    text-align: center;
+}
+
+.section-title h2 {
+    color: #717170;
+    font-family: 'Soft-Elegance';
+    font-size: 63px;
+    margin-bottom: 20px;
+}
+
+.section-title p {
+    color: #a4a4a4;
+    font-size: 15px;
+    margin-bottom: 0.5rem;
+}
+
+.mt-5 {
+    margin-top: 3rem !important;
+}
+
+#lo-mas-pedido {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+
+
+}
+
+.cajaMain {
+    width: 273px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* align-content: center; */
+    align-items: center;
+    position: relative;
+
+}
+
+.cajaMain::after {
+    content: "";
+    width: 10px;
+    height: 250px;
+    position: absolute;
+    bottom: 50px;
+    left: 10px;
+    background-image: url('https://dulcefina.com.pe/wp-content/themes/storefront/assets/images/shape-products.svg');
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: 3px;
+}
+
+
+.contenedor-img img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.caja-opciones {
+    position: absolute;
+    font-size: 14px;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.contenedor-descripcion h2 {
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0;
+    color: #4d4d4d;
+    margin-bottom: 10px;
+
+}
+
+.contenedor-descripcion .h2-s {
+    font-weight: 100;
+}
+
+.contenedor-descripcion span {
+    font-weight: 700;
+}
+
+.cajaMain:hover .caja-opciones {
+
+    opacity: 1;
+}
+
+.btnx {
+    padding: 18px;
+    line-height: 1;
+    border-radius: 0;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 200;
+    font-size: 16px;
+    transition: all .3s ease;
+    text-decoration: none;
+}
+
+.btn-pmr {
+    background-color: #b2dbd5;
+    border-color: #b2dbd5;
+}
+
 
 /*-------------------FIN HOME-------------------*/
 /*-------------------CUENTA------------------------*/
@@ -373,28 +486,79 @@ body {
     margin-bottom: 40px !important;
     color: #000;
 }
-.contenedor-password{
+
+.contenedor-password {
     width: 100%;
     position: relative;
 }
-.contenedor-password input{
+
+.contenedor-password input {
     padding-left: 40px !important;
 }
-.mostrar-password{
+
+.mostrar-password {
     position: absolute;
     top: 50%;
     left: 0%;
     transform: translate(25%, -25%);
     width: 50px;
     height: 50px;
+    cursor: pointer;
+    user-select: none;
 }
+.contenedor-button button{
+    margin-top: 5rem;
+    padding: 0 25px !important;
+    font-size: 13px !important;
+    line-height: 46px !important;
+    font-weight: 300 !important;
+    font-style: normal;
+    text-transform: uppercase;
+    background-color: #b1dad2 !important;
+    border: 1px solid #b1dad2 !important;
+    font-weight: 400;
+    color: #fff;
+    transition: all .3s ease;
+    width: 100% !important;
+}
+.contenedor-button button:hover{
+    border: 1px solid #e5e5e5 !important;
+    background-color: #ffffff !important;
+    color: #493e2f !important;
+}
+
 /*-------------------FIN CUENTA------------------------*/
 
 /*---------------------TIENDA-----------------*/
 /*---------------------FIN TIENDA-----------------*/
 
 /*---------------------NOSOTROS-----------------*/
-.nosotros {}
+.nosotros-content-text {
+    padding-right: 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.nosotros-content-text h2 {
+    font-family: 'Soft-Elegance';
+    margin-bottom: 40px;
+    color: #717170;
+    font-size: 63px;
+}
+.nosotros-content-text p{
+    margin-bottom: 40px;
+    color: #a4a4a4;
+    font-size: 14px;
+}
+.contenedor-2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
 
 /*---------------------FIN NOSOTROS-----------------*/
 
