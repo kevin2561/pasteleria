@@ -456,11 +456,14 @@ body {
 }
 .content-1{
     position: relative;
+    overflow: hidden;
+
     grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     display: grid;
     margin-bottom: 20px;
+
 }
 .content-2{
     position: relative;
@@ -477,7 +480,6 @@ body {
     object-fit: cover;
     transform: scale(1);
     transition: all .3s ease;
-    overflow: hidden;
 }
 
 .content-1:after{
@@ -511,6 +513,7 @@ body {
 }
 .content-repeat{
     position: relative;
+    overflow: hidden;
     height: 260px;
     
 }
@@ -529,7 +532,12 @@ body {
 .content-repeat img{
     width: 100%;
     height: 100%;
-
+    object-fit: cover;
+    transform: scale(1);
+    transition: all .3s ease;
+}
+.content-repeat img:hover{
+    transform: scale(1.1);
 }
 
 /*-------------------FIN HOME-------------------*/
