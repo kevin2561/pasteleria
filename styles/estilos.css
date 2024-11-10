@@ -448,13 +448,16 @@ body {
     background-color: #b2dbd5;
     border-color: #b2dbd5;
 }
-#content-tortas{
+
+#content-tortas {
     background-color: #f2e0db;
 }
-.containe-child-1{
+
+.containe-child-1 {
     display: flex;
 }
-.content-1{
+
+.content-1 {
     position: relative;
     overflow: hidden;
 
@@ -465,7 +468,8 @@ body {
     margin-bottom: 20px;
 
 }
-.content-2{
+
+.content-2 {
     position: relative;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 20px;
@@ -474,7 +478,8 @@ body {
     margin-bottom: 20px;
 
 }
-.content-1 img{
+
+.content-1 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -482,7 +487,7 @@ body {
     transition: all .3s ease;
 }
 
-.content-1:after{
+.content-1:after {
     content: "";
     position: absolute;
     top: 0;
@@ -493,10 +498,12 @@ body {
     pointer-events: none;
 
 }
-.content-1 img:hover{
+
+.content-1 img:hover {
     transform: scale(1.1);
 }
-.content-1-text{
+
+.content-1-text {
     text-align: center;
     align-items: center;
     padding: 0 60px;
@@ -505,20 +512,22 @@ body {
     justify-content: center;
 
 }
-.content-1-text  h2{
+
+.content-1-text h2 {
     color: #717170;
     font-size: 63px;
     font-family: 'Soft-Elegance';
     margin-bottom: 20px;
 }
-.content-repeat{
+
+.content-repeat {
     position: relative;
     overflow: hidden;
     height: 260px;
-    
+
 }
 
-.content-repeat::after{
+.content-repeat::after {
     content: "";
     position: absolute;
     top: 0;
@@ -529,14 +538,16 @@ body {
     pointer-events: none;
 
 }
-.content-repeat img{
+
+.content-repeat img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transform: scale(1);
     transition: all .3s ease;
 }
-.content-repeat img:hover{
+
+.content-repeat img:hover {
     transform: scale(1.1);
 }
 
@@ -596,7 +607,8 @@ body {
     cursor: pointer;
     user-select: none;
 }
-.contenedor-button button{
+
+.contenedor-button button {
     margin-top: 5rem;
     padding: 0 25px !important;
     font-size: 13px !important;
@@ -611,7 +623,8 @@ body {
     transition: all .3s ease;
     width: 100% !important;
 }
-.contenedor-button button:hover{
+
+.contenedor-button button:hover {
     border: 1px solid #e5e5e5 !important;
     background-color: #ffffff !important;
     color: #493e2f !important;
@@ -620,6 +633,86 @@ body {
 /*-------------------FIN CUENTA------------------------*/
 
 /*---------------------TIENDA-----------------*/
+#s-tienda {
+    padding: 70px 0px;
+}
+
+.categorias-productos {
+    border: 1px solid #f2e0db;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.title-categorias {
+    font-size: 25px;
+    color: #6f7170;
+    position: relative;
+    padding-bottom: 10px;
+    font-family: 'Soft-Elegance';
+    border: 0;
+    font-weight: 500;
+}
+
+.title-categorias::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #6f7170;
+    bottom: 0;
+    left: 0;
+}
+
+.listado-categorias {
+    margin-top: 40px;
+
+    padding: 0;
+}
+
+.listado-categorias li {
+    list-style: none;
+    padding: 10px 0;
+    padding-top: 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #f2e0db;
+    display: flex;
+    line-height: 1.7;
+    flex-direction: column;
+    position: relative;
+}
+
+.contenedor-productos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.content-producto {
+    width: 100%;
+    padding: 0px 20px;
+}
+.content-image{
+    height: 270px;
+    margin-bottom: 20px;
+}
+.content-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.title-product{
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0;
+    color: #4d4d4d;
+}
+.price-product{
+    color: #4d4d4d;
+    font-size: 16px;
+    font-weight: 100;
+    margin: 0;
+}
+
 /*---------------------FIN TIENDA-----------------*/
 
 /*---------------------NOSOTROS-----------------*/
@@ -638,12 +731,14 @@ body {
     color: #717170;
     font-size: 63px;
 }
-.nosotros-content-text p{
+
+.nosotros-content-text p {
     margin-bottom: 40px;
     color: #a4a4a4;
     font-size: 14px;
 }
-.contenedor-2 img{
+
+.contenedor-2 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
