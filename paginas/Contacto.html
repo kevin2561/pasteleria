@@ -50,31 +50,37 @@
 
                         <div class="encuentranos-contactos-items libro-reclamaciones">
                             <h2>Envíanos un mensaje</h2>
-                            <form>
+                            <form id="frm-pasteleria">
                                 <div class="contenedor-form">
                                     <label for="">Nombres y apellidos <strong>*</strong></label>
-                                    <input type="text">
+                                    <input type="text" name="nombre" id="nombre" class="inputs" required>
                                 </div>
 
                                 <div class="contenedor-form">
                                     <label for="">Celular <strong>*</strong></label>
-                                    <input type="text">
+                                    <input type="text" name="celular" id="celular" class="inputs" const packageName = require('packageName');>
                                 </div>
 
                                 <div class="contenedor-form">
                                     <label for="">Correo electrónico <strong>*</strong></label>
-                                    <input type="email">
+                                    <input type="email" name="correo" id="correo" class="inputs" required>
                                 </div>
 
                                 <div class="contenedor-form">
                                     <label for="">Mensaje <strong>*</strong></label>
-                                    <textarea>
+                                    <textarea  name="mensaje" class="inputs" id="mensaje" style="padding: 15px 9px;">
 
                                     </textarea>
                                 </div>
 
+                                <div id="contenedor-resultado" class="col-md-12">
+                                    <span id="resultado"></span>
+
+                                </div>
+                                <br>
+
                                 <div class="contenedor-form">
-                                    <button type="submit">Enviar</button>
+                                    <button id="btn-enviar" type="submit">Enviar</button>
                                 </div>
 
                             </form>
@@ -90,4 +96,3 @@
     </div>
 
 </section>
-
